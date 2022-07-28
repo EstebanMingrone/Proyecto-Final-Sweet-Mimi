@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Gabriela&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Pattaya&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  border-bottom: #FAEFE3 solid;
+  margin-bottom: 1px;
+}
+.navbar .navbar-toggler {
+  background-color: #FAEFE3;
+  border: #FAEFE3 solid;
+}
+.navbar .navIcons img {
+  width: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.navbar .offcanvas-header a {
+  justify-content: center;
+}
+.navbar .offcanvas-body a {
+  color: #6E2E3C;
+}
+.navbar .offcanvas-body .nav-link {
+  color: #6E2E3C;
+}
+.navbar .bi {
+  fill: #6E2E3C;
+  width: 32px;
+  margin-top: 10px;
+}
+
+header {
+  width: 100%;
+  margin-top: 143px;
+  overflow: hidden;
+  position: relative;
+}
+header video {
+  width: 100%;
+}
+header .titulo {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: absolute;
+  color: #FAEFE3;
+  font-family: "Gabriela";
+}
+header .titulo h1 {
+  background-color: #6E2E3C;
+  width: 100%;
+}
+
+main {
+  background-image: url(../img/smbckghd.png);
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  background-color: #FAEFE3;
+}
+.card-body .card-title {
+  font-family: "Gabriela";
+  font-weight: 600;
+  color: #6E2E3C;
+  text-align: center;
+}
+.card-body .card-text {
+  font-family: "Josefin Sans";
+  color: #6E2E3C;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
