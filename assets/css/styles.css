@@ -7,6 +7,7 @@
 }
 
 .navbar {
+  width: 100%;
   border-bottom: #FAEFE3 solid;
   margin-bottom: 1px;
 }
@@ -36,7 +37,6 @@
 }
 
 header {
-  width: 100%;
   margin-top: 143px;
   overflow: hidden;
   position: relative;
@@ -59,21 +59,154 @@ header .titulo h1 {
 
 main {
   background-image: url(../img/smbckghd.png);
-  width: 100%;
-  height: auto;
+  padding-bottom: 10px;
 }
-
-.card-body {
+main h2 {
+  font-size: 22px;
+  font-family: "Josefin Sans";
+  color: #6E2E3C;
+  padding-top: 10px;
+  font-weight: bold;
+  text-shadow: 0 0 2px #FAEFE3;
+  text-align: center;
+  padding: 20px;
+}
+main .card {
+  border: #6E2E3C solid;
+}
+main .card .card-body {
   background-color: #FAEFE3;
+  border-top: #6E2E3C solid 2px;
 }
-.card-body .card-title {
+main .card .card-body .card-title {
   font-family: "Gabriela";
   font-weight: 600;
   color: #6E2E3C;
   text-align: center;
 }
-.card-body .card-text {
+main .card .card-body .card-text {
   font-family: "Josefin Sans";
   color: #6E2E3C;
   text-align: center;
+}
+
+.horneados h2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.horneados .contenedor {
+  width: 300px;
+  height: 400px;
+  background-image: url(../img/swcake.jpg);
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.horneados .contenedor .overlay {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background: rgba(250, 239, 227, 0.7803921569);
+  color: #6E2E3C;
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: "Josefin Sans";
+}
+.horneados .contenedor .overlay .items {
+  padding-left: 20px;
+}
+.horneados .contenedor .overlay .head {
+  font-size: 50px;
+  font-weight: bold;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.horneados .contenedor .overlay .desc {
+  font-weight: bold;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.horneados .contenedor .overlay .precio {
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.horneados .contenedor .overlay .cart {
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.horneados .contenedor .overlay .cart .bi {
+  width: 16px;
+  fill: #6E2E3C;
+}
+
+.contenedor:hover .overlay {
+  opacity: 1;
+}
+.contenedor:hover .overlay .head {
+  transform: translateY(0px);
+}
+.contenedor:hover .overlay .desc {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.contenedor:hover .overlay .precio {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.contenedor:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
+}
+
+.arrows:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.footer {
+  background-image: url(../img/smfooterbckg.png);
+  font-family: "Josefin Sans";
+  color: #FAEFE3;
+  border-top: #FAEFE3 solid;
+  text-shadow: 0 0 5px #000;
+}
+.footer h3 {
+  font-family: "Gabriela";
+}
+.footer h4 {
+  font-size: 15px;
+  font-family: "Gabriela";
+  text-decoration: underline;
+}
+.footer a {
+  color: #FAEFE3;
+}
+.footer h5 {
+  font-size: 15px;
+  margin: 5px 0px 0px 0px;
+  padding: 5px;
+}
+.footer .footerCards {
+  border-bottom: #FAEFE3 thin solid;
+  width: 100%;
+}
+.footer .bi {
+  width: 18px;
+  fill: #FAEFE3;
+}
+.footer .footerSocialIcons .bi {
+  width: 24px;
 }/*# sourceMappingURL=styles.css.map */
