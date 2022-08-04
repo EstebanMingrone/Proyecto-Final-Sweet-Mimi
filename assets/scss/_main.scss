@@ -1,0 +1,32 @@
+main{
+    background-image: url(../img/smbckghd.png);
+    padding-bottom: 10px;
+    h2{
+        font-size: 22px;
+        font-family: "Josefin Sans";
+        color: $primaryColor;
+        padding-top: 10px;
+        font-weight: bold;
+        text-shadow: 0 0 2px $secondaryColor;
+        text-align: center;
+        padding: 20px;
+    }
+    .card{
+        border: #6E2E3C solid;
+        .card-body{
+            background-color: $secondaryColor;
+            border-top: $primaryColor solid 2px;
+            .card-title{
+                font-family: "Gabriela";
+                font-weight: 600;
+                color: $primaryColor;
+                text-align: center;
+            }
+            .card-text{
+                font-family: "Josefin Sans";
+                color: $primaryColor;
+                text-align: center;
+            }
+        }
+    }
+}

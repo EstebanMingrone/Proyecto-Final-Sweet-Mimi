@@ -1,0 +1,98 @@
+.carousel-item{
+    font-family: "Josefin Sans";
+    .carousel-caption{
+        background-color: rgba(0, 0, 0, 0.425);
+        border-radius: 20px;
+    }
+    p{
+        color: $secondaryColor;
+    }
+    h2{
+        font-family: "Gabriela";
+        color: $secondaryColor;
+        font-size: 50px;
+        text-shadow: 0 0 5px #000;
+    }
+}
+
+.categorias{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #6E2E3C solid;
+    font-family: "Josefin Sans";
+    height: fit-content;
+    background-color: $secondaryColor;
+    input{
+        width: 90%;
+        border: none;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 5px;
+        box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.12);
+    }
+    h2{
+        font-family: "Gabriela";
+    }
+    h3{
+        font-family: "Gabriela";
+        color: $primaryColor;
+        text-shadow: 0 0 2px $secondaryColor;
+        font-weight: bold;
+        font-size: 19px;
+        margin: 8px;
+        padding: 10px;
+    }
+    .btn{
+        color: $secondaryColor;
+        box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.12);
+    }
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.productCard{
+    width: 30%;
+    border: $primaryColor solid;
+    border-radius: 10px;
+    background-color: $secondaryColor;
+    font-family: "Josefin Sans";
+    color: $primaryColor;
+    font-size: 15px;
+    margin: 5px;
+    &:hover{
+        -webkit-box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.12); 
+        box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.12);
+    }
+    img{
+        width: 100%;
+    }
+    .body-card{
+        padding: 10px;
+        h3{
+            font-family: "Gabriela";
+            font-weight: bolder;
+            text-shadow: 0 0 2px $secondaryColor;
+        }
+        button{
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            background-color: $primaryColor;
+            color: $secondaryColor;
+            &:hover{
+                background-color:#612834;       
+            }
+        }
+    }
+}

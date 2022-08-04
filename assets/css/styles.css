@@ -36,15 +36,15 @@
   margin-top: 10px;
 }
 
-header {
+.indexHeader {
   margin-top: 143px;
   overflow: hidden;
   position: relative;
 }
-header video {
+.indexHeader video {
   width: 100%;
 }
-header .titulo {
+.indexHeader .titulo {
   width: 100%;
   height: 100%;
   z-index: 100;
@@ -52,9 +52,30 @@ header .titulo {
   color: #FAEFE3;
   font-family: "Gabriela";
 }
-header .titulo h1 {
+.indexHeader .titulo h1 {
   background-color: #6E2E3C;
   width: 100%;
+}
+
+.header {
+  margin-top: 143px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+.header img {
+  width: 100%;
+}
+.header h1 {
+  color: #FAEFE3;
+  text-shadow: 0 0 5px #000;
+  font-family: "Josefin Sans";
+  font-size: 70px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
 }
 
 main {
@@ -176,6 +197,162 @@ main .card .card-body .card-text {
   cursor: pointer;
 }
 
+.tarjetas {
+  padding: 10px;
+  display: flex;
+}
+
+.tarjeta {
+  background-color: #FAEFE3;
+  width: 60%;
+  border: #6E2E3C solid;
+  border-radius: 5px;
+  text-align: center;
+  color: #6E2E3C;
+  font-family: "Josefin Sans";
+  margin: 10px;
+}
+.tarjeta:hover {
+  -webkit-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.tarjeta img {
+  width: 100%;
+  height: auto;
+}
+.tarjeta .cuerpoTarjeta {
+  padding: 10px;
+  font-size: large;
+}
+.tarjeta .cuerpoTarjeta h1 {
+  font-family: "Gabriela";
+  font-weight: 800;
+  font-size: 30px;
+  text-shadow: 0 0 1px #6E2E3C;
+}
+
+.carousel-item {
+  font-family: "Josefin Sans";
+}
+.carousel-item .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.425);
+  border-radius: 20px;
+}
+.carousel-item p {
+  color: #FAEFE3;
+}
+.carousel-item h2 {
+  font-family: "Gabriela";
+  color: #FAEFE3;
+  font-size: 50px;
+  text-shadow: 0 0 5px #000;
+}
+
+.categorias {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #6E2E3C solid;
+  font-family: "Josefin Sans";
+  height: fit-content;
+  background-color: #FAEFE3;
+}
+aside input {
+  width: 90%;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.12);
+}
+aside h2 {
+  font-family: "Gabriela";
+}
+aside h3 {
+  font-family: "Gabriela";
+  color: #6E2E3C;
+  text-shadow: 0 0 2px #FAEFE3;
+  font-weight: bold;
+  font-size: 19px;
+  margin: 8px;
+  padding: 10px;
+}
+aside .btn {
+  color: #FAEFE3;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.12);
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.productCard {
+  width: 30%;
+  border: #6E2E3C solid;
+  border-radius: 10px;
+  background-color: #FAEFE3;
+  font-family: "Josefin Sans";
+  color: #6E2E3C;
+  font-size: 15px;
+  margin: 5px;
+}
+.productCard:hover {
+  -webkit-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.productCard img {
+  width: 100%;
+}
+.productCard .body-card {
+  padding: 10px;
+}
+.productCard .body-card h3 {
+  font-family: "Gabriela";
+  font-weight: bolder;
+  text-shadow: 0 0 2px #FAEFE3;
+}
+.productCard .body-card button {
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #6E2E3C;
+  color: #FAEFE3;
+}
+.productCard .body-card button:hover {
+  background-color: #612834;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.cuadros {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  transition: all 1s;
+}
+.cuadros img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.cuadros img:hover {
+  transform: translate(0px, 20px) scale(1.2);
+}
+
 .footer {
   background-image: url(../img/smfooterbckg.png);
   font-family: "Josefin Sans";
@@ -209,4 +386,43 @@ main .card .card-body .card-text {
 }
 .footer .footerSocialIcons .bi {
   width: 24px;
+}
+
+.footerSocialIcons svg:hover {
+  fill: #000;
+}
+
+.bi:hover {
+  fill: #000;
+}
+
+@media (max-width: 900px) {
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  aside {
+    display: none;
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .products .productCard {
+    width: 100%;
+  }
+  .cuadros {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .cuadros {
+    flex: 100%;
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

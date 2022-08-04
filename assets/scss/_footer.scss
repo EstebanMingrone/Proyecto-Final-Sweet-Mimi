@@ -1,0 +1,44 @@
+.footer{
+    background-image: url(../img/smfooterbckg.png);
+    font-family: "Josefin Sans";
+    color: $secondaryColor;
+    border-top: #FAEFE3 solid;
+    text-shadow: 0 0 5px #000  ;
+    h3{
+        font-family: "Gabriela";
+    }
+    h4{
+       font-size: 15px; 
+       font-family: "Gabriela";
+       text-decoration: underline;
+    }
+    a{
+        color: $secondaryColor;
+    }
+    h5{
+        font-size: 15px;
+        margin: 5px 0px 0px 0px;
+        padding: 5px;
+    }
+    .footerCards{
+        border-bottom: #FAEFE3 thin solid;
+        width: 100%;
+    }
+    .bi{
+        width: 18px;
+        fill: $secondaryColor;
+    }
+    .footerSocialIcons{
+        .bi{
+            width: 24px;
+        }
+    }
+}
+
+.footerSocialIcons svg:hover{
+    fill: #000;
+}
+
+.bi:hover{
+    fill: #000;
+}

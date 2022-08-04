@@ -1,224 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Gabriela&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Pattaya&display=swap');*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+@import "generales";
+@import "navbar";
+@import "header";
+@import "main";
+@import "section";
+@import "nosotros";
+@import "productos";
+@import "galeria";
+@import "footer";
 
-$primaryColor: #6E2E3C;
-$secondaryColor: #FAEFE3;
-$card-height: 100%;
-
-.navbar{
-    width: 100%;
-    border-bottom: #FAEFE3 solid;
-    margin-bottom: 1px;
-    .navbar-toggler{
-        background-color:  $secondaryColor ;
-        border: #FAEFE3 solid;
-    }
-    .navIcons img{
-        width: 60px;
+@media(max-width:900px){
+    .tarjetas{
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .offcanvas-header{
-        a{
-            justify-content: center;
-        }
+    aside{
+        display: none;
     }
-    .offcanvas-body{
-        a{
-            color: $primaryColor;
-        }
-        .nav-link{
-            color: $primaryColor;
-        }
-    }
-    .bi{
-        fill: $primaryColor;
-        width: 32px;
-        margin-top: 10px;
-    }
-}
-
-header{
-    margin-top: 143px;
-    overflow: hidden;
-    position: relative;
-    video{
-        width: 100%;
-    }
-    .titulo{
-        width: 100%;
-        height: 100%;
-        z-index: 100;
-        position: absolute;
-        color: #FAEFE3;
-        font-family: "Gabriela";
-        h1{
-            background-color: #6E2E3C;
+    .products{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .productCard{
             width: 100%;
         }
     }
-}
-
-main{
-    background-image: url(../img/smbckghd.png);
-    padding-bottom: 10px;
-    h2{
-        font-size: 22px;
-        font-family: "Josefin Sans";
-        color: $primaryColor;
-        padding-top: 10px;
-        font-weight: bold;
-        text-shadow: 0 0 2px $secondaryColor;
-        text-align: center;
-        padding: 20px;
-    }
-    .card{
-        border: #6E2E3C solid;
-        .card-body{
-            background-color: $secondaryColor;
-            border-top: $primaryColor solid 2px;
-            .card-title{
-                font-family: "Gabriela";
-                font-weight: 600;
-                color: $primaryColor;
-                text-align: center;
-            }
-            .card-text{
-                font-family: "Josefin Sans";
-                color: $primaryColor;
-                text-align: center;
-            }
-        }
+    .cuadros{
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
-.horneados{
-    h2{
-        font-size: 30px;
-        margin-top: 10px;
-    }
-    .contenedor{
-        width: 300px;
-        height: 400px;
-        background-image: url(../img/swcake.jpg);
-        background-color: black;
-        background-size: cover;
-        cursor: pointer;
-        -webkit-box-shadow: 0 0 5px #000;
-        box-shadow: 0 0 5px #000;
-        .overlay{
-            width: 100%;
-            height: 100%;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 2fr 2fr 1fr;
-            background: #faefe3c7;
-            color: #6E2E3C;
-            opacity: 0;
-            transition: all 0.5s;
-            font-family: "Josefin Sans";
-            .items{
-                padding-left: 20px;
-            }
-            .head{
-                font-size: 50px;
-                font-weight: bold;
-                transform: translateY(40px);
-                transition: all 0.7s;
-            }
-            .desc{
-                font-weight: bold;
-                transform: translateY(40px);
-                transition: all 0.7s;
-            }
-            .precio{
-                font-size: 22px;
-                line-height: 10px;
-                font-weight: bold;
-                opacity: 0;
-                transform: translateY(40px);
-                transition: all 0.7s;
-            }
-            .cart{
-                letter-spacing: 1px;
-                opacity: 0;
-                transform: translateY(40px);
-                transition: all 0.7s;
-                .bi{
-                    width: 16px;
-                    fill: $primaryColor;
-                }
-            }
-        }
-    }
-}
-
-.contenedor:hover .overlay{
-    opacity: 1;
-    & .head{
-        transform: translateY(0px);
-    }
-    & .desc{
-        transform: translateY(0px);
-        transition-delay: 0.3s;
-        opacity: 1;
-    }
-    & .precio{
-        transform: translateY(0px);
-        transition-delay: 0.3s;
-        opacity: 1;
-    }
-    & .cart{
-        transform: translateY(0px);
-        transition-delay: 0.6s;
-        opacity: 1;
-    }
-}
-
-.arrows:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-
-.footer{
-    background-image: url(../img/smfooterbckg.png);
-    font-family: "Josefin Sans";
-    color: $secondaryColor;
-    border-top: #FAEFE3 solid;
-    text-shadow: 0 0 5px #000  ;
-    h3{
-        font-family: "Gabriela";
-    }
-    h4{
-       font-size: 15px; 
-       font-family: "Gabriela";
-       text-decoration: underline;
-    }
-    a{
-        color: $secondaryColor;
-    }
-    h5{
-        font-size: 15px;
-        margin: 5px 0px 0px 0px;
-        padding: 5px;
-    }
-    .footerCards{
-        border-bottom: #FAEFE3 thin solid;
-        width: 100%;
-    }
-    .bi{
-        width: 18px;
-        fill: $secondaryColor;
-    }
-    .footerSocialIcons{
-        .bi{
-            width: 24px;
-        }
+@media(max-width:768px){
+    .cuadros{
+        flex: 100%;
+        max-width: 100%;
     }
 }

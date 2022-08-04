@@ -1,0 +1,41 @@
+.indexHeader{
+    margin-top: 143px;
+    overflow: hidden;
+    position: relative;
+    video{
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        position: absolute;
+        color: #FAEFE3;
+        font-family: "Gabriela";
+        h1{
+            background-color: #6E2E3C;
+            width: 100%;
+        }
+    }
+}
+
+.header{
+    margin-top: 143px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    h1{
+        color: $secondaryColor;
+        text-shadow: 0 0 5px #000;
+        font-family: "Josefin Sans";
+        font-size: 70px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 50%;
+    }
+}

@@ -15,19 +15,19 @@
 </head>
 <body class="container-fluid p-0">
     <nav class="navbar bg-primary fixed-top">
-        <div class="container-fluid row justify-content-between m-0 p-0">
-            <div class="row align-items-center text-center m-0 p-0">
-                <div class="col-4 p-0">
+        <div class="container-fluid d-flex row justify-content-between m-0 p-0">
+            <div class="row d-flex row-cols-3 align-items-center text-center m-0 p-0">
+                <div class="col-4 col-md-1 me-md-3 flex-fill p-0">
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-md-4 mx-md-3 flex-fill">
                     <a class="navbar-brand" href="../index.html"><img src="../assets/img/sm124px.png" alt="logo"></a>
                 </div>
-                <div class="navIcons col-3 me-3 d-flex">
-                    <img src="../assets/img/userlogo.png" alt="userLogo">
-                    <img src="../assets/img/cartlogo.png" alt="cartLogo">
+                <div class="navIcons col-2 col-md-1 justify-content-md-end me-md-0 flex-fill me-3 d-flex">
+                    <div><img src="../assets/img/userlogo.png" alt="userLogo"></div>
+                    <div><img src="../assets/img/cartlogo.png" alt="cartLogo"></div>
                 </div>
             </div>
             <div class="offcanvas offcanvas-start bg-secondary text-center" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -41,16 +41,16 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/nosotros.html">Sobre Nosotros</a>
+                            <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                            <a class="nav-link" href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/galeria.html">Galería</a>
+                            <a class="nav-link" href="./galeria.html">Galería</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -75,11 +75,38 @@
     </nav>
 
     <header>
-
+        <div class="header">
+            <img src="../assets/img/nosotros-1.png" alt="nosotrosHdr">
+            <div>
+                <h1 data-aos="zoom-in">Sobre Nosotros</h1>
+            </div>
+        </div>
     </header>
 
     <main>
-
+        <div class="tarjetas">
+            <div class="tarjeta" data-aos="fade-up" data-aos-duration="3000">
+                <img src="../assets/img/nosotros-2.png" alt="nosotrosImg">
+                <div class="cuerpoTarjeta">
+                    <h1>Nuestra Historia</h1>
+                    <p>Somos un emprendimiento familiar dedicada a la elaboración de Tortas desde hace 20 años. Buscamos ponernos al día con las nuevas técnicas que van surgiendo en las pastelerías del mundo para loograr sabor, color y delicadeza, sin perder la calidez del hogar y el toque casero en cada uno de tus pedidos.</p>
+                </div>
+            </div>
+            <div class="tarjeta" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+                <img src="../assets/img/nosotros-3.png" alt="nosotrosImg">
+                <div class="cuerpoTarjeta">
+                    <h1>Nuestro Trabajo</h1>
+                    <p>Es totalmente artesanal, dando el tiempo necesario para lograr las deliciosas obras de arte que tu evento o fiesta amerita.</p>
+                </div>
+            </div>
+            <div class="tarjeta" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="400">
+                <img src="../assets/img/ofertas.jpg" alt="nosotrosImg">
+                <div class="cuerpoTarjeta">
+                    <h1>¿Qué Ofrecemos?</h1>
+                    <p>Queremos que tu evento sea perfecto, por eso cada delicia es personalizable y los gustos a tu elección. Desde una pastafrola de membrillo o batata, hasta crema de arandanos para tus budines o tortas, frutas de estación, mouses entre otras delicias para que tu mesa dulce o salada sea única.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <section>
@@ -128,9 +155,9 @@
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0">Inicio</a></li>
                     <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0">Sobre Nosotros</a></li>
-                    <li class="nav-item mb-2"><a href="./pages/productos.html" class="nav-link p-0">Productos</a></li>
-                    <li class="nav-item mb-2"><a href="./pages/galeria.html" class="nav-link p-0">Galería</a></li>
-                    <li class="nav-item mb-2"><a href="./pages/contacto.html" class="nav-link p-0">Contacto</a></li>
+                    <li class="nav-item mb-2"><a href="./productos.html" class="nav-link p-0">Productos</a></li>
+                    <li class="nav-item mb-2"><a href="./galeria.html" class="nav-link p-0">Galería</a></li>
+                    <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0">Contacto</a></li>
                 </ul>
             </div>
           
@@ -158,7 +185,7 @@
                 </ul>
             </div>
         </div>
-        <h5 class="text-center text-muted">&copy;Sweet Mimi | 2022 Todos los Derechos Reservados</h5>
+        <h5 class="text-center">&copy;Sweet Mimi | 2022 Todos los Derechos Reservados</h5>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

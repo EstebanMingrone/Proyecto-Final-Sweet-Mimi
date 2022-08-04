@@ -1,0 +1,33 @@
+.navbar{
+    width: 100%;
+    border-bottom: #FAEFE3 solid;
+    margin-bottom: 1px;
+    .navbar-toggler{
+        background-color:  $secondaryColor ;
+        border: #FAEFE3 solid;
+    }
+    .navIcons img{
+        width: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .offcanvas-header{
+        a{
+            justify-content: center;
+        }
+    }
+    .offcanvas-body{
+        a{
+            color: $primaryColor;
+        }
+        .nav-link{
+            color: $primaryColor;
+        }
+    }
+    .bi{
+        fill: $primaryColor;
+        width: 32px;
+        margin-top: 10px;
+    }
+}
