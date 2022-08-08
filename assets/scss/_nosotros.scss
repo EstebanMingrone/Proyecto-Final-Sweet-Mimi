@@ -2,6 +2,7 @@
     padding: 10px;
     display: flex;
 }
+
 .tarjeta{
     @extend .card;
     background-color: $secondaryColor;
