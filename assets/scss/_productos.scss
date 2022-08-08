@@ -1,3 +1,19 @@
+@mixin texto($font,$color,$size) {
+    @if ($font == true) {
+        font-family: "Gabriela";
+    }
+    @else{
+        font-family: "Josefin Sans";
+    }
+    @if ($color == true) {
+        color: $primaryColor;
+    }
+    @else{
+        color: $secondaryColor
+    }
+    font-size: $size;
+}
+
 .carousel-item{
     font-family: "Josefin Sans";
     .carousel-caption{
@@ -8,9 +24,7 @@
         color: $secondaryColor;
     }
     h2{
-        font-family: "Gabriela";
-        color: $secondaryColor;
-        font-size: 50px;
+        @include texto(true, false , 50px);
         text-shadow: 0 0 5px #000;
     }
 }
@@ -20,7 +34,7 @@
     padding-top: 0px;
 }
 
-aside{
+.asideProductos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,28 +43,26 @@ aside{
     height: fit-content;
     background-color: $secondaryColor;
     input{
-        width: 90%;
+        width: 100%;
         border: none;
         border-radius: 10px;
         margin-top: 10px;
         padding: 5px;
-        box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.12);
+        box-shadow: $sombra;
     }
     h2{
         font-family: "Gabriela";
     }
     h3{
-        font-family: "Gabriela";
-        color: $primaryColor;
+        @include texto(true, true , 19px);
         text-shadow: 0 0 2px $secondaryColor;
         font-weight: bold;
-        font-size: 19px;
         margin: 8px;
         padding: 10px;
     }
     .btn{
         color: $secondaryColor;
-        box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.12);
+        box-shadow: $sombra;
     }
 }
 
@@ -66,13 +78,11 @@ aside{
     border: $primaryColor solid;
     border-radius: 10px;
     background-color: $secondaryColor;
-    font-family: "Josefin Sans";
-    color: $primaryColor;
-    font-size: 15px;
+    @include texto(false, true , 15px);
     margin: 5px;
     &:hover{
-        -webkit-box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.12); 
-        box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.12);
+        -webkit-box-shadow: $sombra; 
+        box-shadow: $sombra;
     }
     img{
         width: 100%;

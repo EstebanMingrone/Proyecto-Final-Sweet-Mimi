@@ -1,0 +1,76 @@
+.form{
+    font-family: "Josefin Sans";
+    color: $primaryColor;
+    h3{
+        font-family: "Gabriela";
+        font-weight: 800;
+        font-size: 32px;
+        text-shadow: 0 0 3px $secondaryColor;
+    }
+    input{
+        width: 100%;
+        border-radius: 15px;
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: $secondaryColor;
+        &:focus{
+            box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.12);
+        }
+    }
+    textarea{
+        @extend input;
+    }
+    .btn-primary{
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: $primaryColor;
+        color: $secondaryColor;
+        margin-bottom: 10px;
+        &:hover{
+            background-color:#612834;       
+        }
+    }
+}
+
+.ubicacion{
+    text-align: center;
+    font-family: "Josefin Sans";
+    color: $primaryColor;
+    background-color: $secondaryColor;
+    border: solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.map{
+    iframe{
+        width: 100%;
+    }
+}
+
+.contactoBox{
+    color: $primaryColor;
+    font-family: "Josefin Sans";
+    margin-top: 10px;
+    background-color: $secondaryColor;
+    border: solid;
+    border-radius: 20px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.541);
+    h2{
+        font-size: 32px;
+    }
+    ul{
+        margin: 10px;
+        padding-left: 10px;
+        li{
+            list-style: none;
+            .bi{
+                width: 32px;
+                fill: $primaryColor;
+                margin-right: 10px;
+            }
+        }
+    }
+    
+}

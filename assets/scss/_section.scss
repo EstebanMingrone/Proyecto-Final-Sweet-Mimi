@@ -1,3 +1,15 @@
+@mixin sectionAnimation{
+    font-weight: bold;
+    transform: translateY(40px);
+    transition: all 0.7s;
+} 
+
+@mixin sectionHover($transform,$delay,$opacity)  {
+    transform: $transform;
+    transition-delay: $delay;
+    opacity: $opacity;
+}
+
 .horneados{
     h2{
         font-size: 30px;
@@ -19,7 +31,7 @@
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 2fr 2fr 1fr;
             background: #faefe3c7;
-            color: #6E2E3C;
+            color: $primaryColor;
             opacity: 0;
             transition: all 0.5s;
             font-family: "Josefin Sans";
@@ -28,28 +40,21 @@
             }
             .head{
                 font-size: 50px;
-                font-weight: bold;
-                transform: translateY(40px);
-                transition: all 0.7s;
+                @include sectionAnimation();
             }
             .desc{
-                font-weight: bold;
-                transform: translateY(40px);
-                transition: all 0.7s;
+                @include sectionAnimation();
             }
             .precio{
                 font-size: 22px;
                 line-height: 10px;
-                font-weight: bold;
                 opacity: 0;
-                transform: translateY(40px);
-                transition: all 0.7s;
+                @include sectionAnimation();
             }
             .cart{
                 letter-spacing: 1px;
                 opacity: 0;
-                transform: translateY(40px);
-                transition: all 0.7s;
+                @include sectionAnimation();
                 .bi{
                     width: 16px;
                     fill: $primaryColor;
@@ -65,19 +70,13 @@
         transform: translateY(0px);
     }
     & .desc{
-        transform: translateY(0px);
-        transition-delay: 0.3s;
-        opacity: 1;
+        @include sectionHover(translateY(0px),0.3s ,1)
     }
     & .precio{
-        transform: translateY(0px);
-        transition-delay: 0.3s;
-        opacity: 1;
+        @include sectionHover(translateY(0px),0.3s ,1)
     }
     & .cart{
-        transform: translateY(0px);
-        transition-delay: 0.6s;
-        opacity: 1;
+        @include sectionHover(translateY(0px),0.6s ,1)
     }
 }
 

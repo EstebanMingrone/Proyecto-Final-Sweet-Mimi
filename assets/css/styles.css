@@ -92,20 +92,21 @@ main h2 {
   text-align: center;
   padding: 20px;
 }
-main .card {
+main .card, main .tarjeta {
   border: #6E2E3C solid;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.12);
 }
-main .card .card-body {
+main .card .card-body, main .tarjeta .card-body {
   background-color: #FAEFE3;
   border-top: #6E2E3C solid 2px;
 }
-main .card .card-body .card-title {
+main .card .card-body .card-title, main .tarjeta .card-body .card-title {
   font-family: "Gabriela";
   font-weight: 600;
   color: #6E2E3C;
   text-align: center;
 }
-main .card .card-body .card-text {
+main .card .card-body .card-text, main .tarjeta .card-body .card-text {
   font-family: "Josefin Sans";
   color: #6E2E3C;
   text-align: center;
@@ -154,14 +155,15 @@ main .card .card-body .card-text {
 .horneados .contenedor .overlay .precio {
   font-size: 22px;
   line-height: 10px;
-  font-weight: bold;
   opacity: 0;
+  font-weight: bold;
   transform: translateY(40px);
   transition: all 0.7s;
 }
 .horneados .contenedor .overlay .cart {
   letter-spacing: 1px;
   opacity: 0;
+  font-weight: bold;
   transform: translateY(40px);
   transition: all 0.7s;
 }
@@ -205,7 +207,6 @@ main .card .card-body .card-text {
 .tarjeta {
   background-color: #FAEFE3;
   width: 60%;
-  border: #6E2E3C solid;
   border-radius: 5px;
   text-align: center;
   color: #6E2E3C;
@@ -253,7 +254,7 @@ main .card .card-body .card-text {
   padding-top: 0px;
 }
 
-aside {
+.asideProductos {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -262,29 +263,29 @@ aside {
   height: fit-content;
   background-color: #FAEFE3;
 }
-aside input {
-  width: 90%;
+.asideProductos input, .asideProductos .form textarea, .form .asideProductos textarea {
+  width: 100%;
   border: none;
   border-radius: 10px;
   margin-top: 10px;
   padding: 5px;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.12);
 }
-aside h2 {
+.asideProductos h2 {
   font-family: "Gabriela";
 }
-aside h3 {
+.asideProductos h3 {
   font-family: "Gabriela";
   color: #6E2E3C;
+  font-size: 19px;
   text-shadow: 0 0 2px #FAEFE3;
   font-weight: bold;
-  font-size: 19px;
   margin: 8px;
   padding: 10px;
 }
-aside .btn {
+.asideProductos .btn {
   color: #FAEFE3;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.12);
 }
 
 .products {
@@ -353,6 +354,77 @@ aside .btn {
   transform: translate(0px, 20px) scale(1.2);
 }
 
+.form {
+  font-family: "Josefin Sans";
+  color: #6E2E3C;
+}
+.form h3 {
+  font-family: "Gabriela";
+  font-weight: 800;
+  font-size: 32px;
+  text-shadow: 0 0 3px #FAEFE3;
+}
+.form input, .form textarea {
+  width: 100%;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #FAEFE3;
+}
+.form input:focus, .form textarea:focus {
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.12);
+}
+.form .btn-primary {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #6E2E3C;
+  color: #FAEFE3;
+  margin-bottom: 10px;
+}
+.form .btn-primary:hover {
+  background-color: #612834;
+}
+
+.ubicacion {
+  text-align: center;
+  font-family: "Josefin Sans";
+  color: #6E2E3C;
+  background-color: #FAEFE3;
+  border: solid;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.contactoBox {
+  color: #6E2E3C;
+  font-family: "Josefin Sans";
+  margin-top: 10px;
+  background-color: #FAEFE3;
+  border: solid;
+  border-radius: 20px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.541);
+}
+.contactoBox h2 {
+  font-size: 32px;
+}
+.contactoBox ul {
+  margin: 10px;
+  padding-left: 10px;
+}
+.contactoBox ul li {
+  list-style: none;
+}
+.contactoBox ul li .bi {
+  width: 32px;
+  fill: #6E2E3C;
+  margin-right: 10px;
+}
+
 .footer {
   background-image: url(../img/smfooterbckg.png);
   font-family: "Josefin Sans";
@@ -387,12 +459,7 @@ aside .btn {
 .footer .footerSocialIcons .bi {
   width: 24px;
 }
-
-.footerSocialIcons svg:hover {
-  fill: #000;
-}
-
-.bi:hover {
+.footer .footerSocialIcons .bi:hover {
   fill: #000;
 }
 
@@ -403,7 +470,7 @@ aside .btn {
     justify-content: center;
     align-items: center;
   }
-  aside {
+  .asideProductos {
     display: none;
   }
   .products {
@@ -413,7 +480,7 @@ aside .btn {
     align-items: center;
   }
   .products .productCard {
-    width: 100%;
+    width: 50%;
   }
   .cuadros {
     flex: 50%;
@@ -421,8 +488,21 @@ aside .btn {
   }
 }
 @media (max-width: 768px) {
+  .asideProductos {
+    display: none;
+  }
   .cuadros {
     flex: 100%;
     max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar .navIcons div img {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .asideProductos {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

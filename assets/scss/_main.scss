@@ -13,6 +13,7 @@ main{
     }
     .card{
         border: #6E2E3C solid;
+        box-shadow: $sombra;
         .card-body{
             background-color: $secondaryColor;
             border-top: $primaryColor solid 2px;

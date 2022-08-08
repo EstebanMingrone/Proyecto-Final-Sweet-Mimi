@@ -3,17 +3,17 @@
     display: flex;
 }
 .tarjeta{
+    @extend .card;
     background-color: $secondaryColor;
     width: 60%;
-    border: $primaryColor solid;
     border-radius: 5px;
     text-align: center;
     color: $primaryColor;
     font-family: "Josefin Sans";
     margin: 10px;
     &:hover{
-        -webkit-box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.12); 
-        box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.12);
+        -webkit-box-shadow: $sombra; 
+        box-shadow: $sombra;
     }
     img{
         width: 100%;

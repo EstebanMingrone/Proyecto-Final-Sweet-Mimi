@@ -31,14 +31,9 @@
     .footerSocialIcons{
         .bi{
             width: 24px;
+            &:hover{
+                fill: #000;
+            }
         }
     }
-}
-
-.footerSocialIcons svg:hover{
-    fill: #000;
-}
-
-.bi:hover{
-    fill: #000;
 }

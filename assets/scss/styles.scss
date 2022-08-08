@@ -6,7 +6,9 @@
 @import "nosotros";
 @import "productos";
 @import "galeria";
+@import "contacto";
 @import "footer";
+
 
 @media(max-width:900px){
     .tarjetas{
@@ -15,7 +17,7 @@
         justify-content: center;
         align-items: center;
     }
-    aside{
+    .asideProductos{
         display: none;
     }
     .products{
@@ -24,7 +26,7 @@
         justify-content: center;
         align-items: center;
         .productCard{
-            width: 100%;
+            width: 50%;
         }
     }
     .cuadros{
@@ -34,8 +36,30 @@
 }
 
 @media(max-width:768px){
+    .asideProductos{
+        display: none;
+    }
     .cuadros{
         flex: 100%;
         max-width: 100%;
+    }
+}
+
+@media(max-width:768px){
+    .navbar{
+        .navIcons{
+            div{
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}
+
+@media(max-width:1000px){
+    .asideProductos{
+        display: none;
     }
 }
