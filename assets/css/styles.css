@@ -71,7 +71,7 @@
   color: #FAEFE3;
   text-shadow: 0 0 5px #000;
   font-family: "Josefin Sans";
-  font-size: 70px;
+  font-size: 5rem;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -411,6 +411,9 @@ main .card .card-body .card-text, main .tarjeta .card-body .card-text {
 }
 .contactoBox h2 {
   font-size: 32px;
+  text-align: center;
+  font-family: "Gabriela";
+  padding: 5px;
 }
 .contactoBox ul {
   margin: 10px;
@@ -499,6 +502,9 @@ main .card .card-body .card-text, main .tarjeta .card-body .card-text {
 @media (max-width: 768px) {
   .navbar .navIcons div img {
     display: none;
+  }
+  .header h1 {
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 1000px) {
